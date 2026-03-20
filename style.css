@@ -1,0 +1,27 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0a0a0a; /* Fundo escuro para destaque */
+}
+
+.esfera {
+    width: 200px;
+    height: 200px;
+    background-color: #007aff; /* Cor inicial */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    
+    /* Efeito de profundidade (Sombra interna e externa) */
+    box-shadow: inset -20px -20px 50px rgba(0,0,0,0.5), 
+                0 0 30px rgba(0,0,0,0.3);
+}
+
+.esfera:hover {
+    transform: scale(1.05);
+}

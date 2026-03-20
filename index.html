@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Esfera Cromática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="esfera" onmouseover="mudarCor(this)"></div>
+
+    <script>
+        function mudarCor(elemento) {
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            elemento.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        }
+    </script>
+</body>
+</html>
